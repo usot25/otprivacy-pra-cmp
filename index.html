@@ -1,0 +1,2650 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRA/CMP OptOut | White tiger: facts, history and conservation</title>
+  <meta name="description"
+    content="The white tiger is a Bengal tiger with a rare recessive gene. Learn where it came from, where white tigers live today, and the measures being taken for tigers." />
+  <meta name="theme-color" content="#F7F6F2" />
+  <!--
+  WHITE, TIGER: editorial guide
+  Facts: National Geographic, Discovery, WWF, IFAW, Government of India, U.S. Fish and Wildlife Service.
+  Images: Unsplash and Pexels (free licences); credited under each photo.
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.pexels.com" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" />
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <style>
+    /* ============================================================
+   1. TOKENS
+   Every text pair below is measured (WCAG 2.x relative luminance).
+   ============================================================ */
+    :root {
+      /* Paper — light, warm, monochrome-first */
+      --paper: #F7F6F2;
+      --tint: #ECEBE5;
+      /* surface shift instead of borders */
+      --white: #FFFFFF;
+      --ink: #141413;
+      /* 17.1:1 paper · 15.4:1 tint */
+      --ink-2: #4A4944;
+      /*  8.3:1 paper ·  7.6:1 tint */
+      --ink-3: #5E5D57;
+      /*  6.1:1 paper ·  5.5:1 tint */
+      --rule: #7A7973;
+      /* input underline 4.0:1 paper · 3.7:1 tint (1.4.11) */
+      --gum: #2C4A5E;
+      /* slate accent  8.6:1 paper · 7.8:1 tint · white on slate 9.3:1 */
+      --danger: #A1261B;
+      /*  6.9:1 paper ·  6.2:1 danger-tint */
+      --danger-tint: #F7E7E3;
+      --ok-tint: #E4EFE7;
+      /* gum-dark on ok-tint 6.9:1 */
+      --ok-ink: #1F5A3C;
+      /* Night — one inverse block for rhythm */
+      --night: #15191C;
+      --night-ink: #EDEFEA;
+      /* 15.3:1 */
+      --night-ink-2: #A7B0B5;
+      /*  8.0:1 */
+      --night-accent: #B9CFDC;
+      /* 11.0:1 */
+      --night-rule: #7D878D;
+      /*  4.8:1 (1.4.11) */
+
+      /* Type — editorial serif display, grotesk text. No Inter, no mono. */
+      --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --sans: "Schibsted Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+      /* Fluid scale: 360px → 1600px */
+      --fs-meta: clamp(.8125rem, .79rem + .1vw, .875rem);
+      --fs-body: clamp(1rem, .97rem + .15vw, 1.0625rem);
+      --fs-lede: clamp(1.1875rem, 1.1rem + .4vw, 1.4375rem);
+      --fs-h3: clamp(1.375rem, 1.25rem + .6vw, 1.875rem);
+      --fs-h2: clamp(2.125rem, 1.7rem + 2vw, 3.75rem);
+      --fs-stmt: clamp(1.75rem, 1.35rem + 2vw, 3.5rem);
+      --fs-hero: clamp(3.25rem, 1.9rem + 6.4vw, 10rem);
+      --fs-fig: clamp(4rem, 2.6rem + 7vw, 11rem);
+
+      /* Space — 8pt rhythm; sections lean on emptiness, not rules */
+      --s-1: .25rem;
+      --s-2: .5rem;
+      --s-3: .75rem;
+      --s-4: 1rem;
+      --s-5: 1.5rem;
+      --s-6: 2rem;
+      --s-7: 3rem;
+      --s-8: 4.5rem;
+      --s-9: 7rem;
+      --section: clamp(6rem, 3.5rem + 10vw, 14rem);
+      --gutter: clamp(1.25rem, .75rem + 2.2vw, 3.5rem);
+      --max: 1560px;
+      --measure: 58ch;
+      --header-h: 64px;
+
+      /* Motion — short, deliberate, interactive elements only */
+      --ease: cubic-bezier(.2, .7, .1, 1);
+      --t-instant: 90ms;
+      --t-quick: 220ms;
+      --t-sheet: 420ms;
+    }
+
+    @media (min-width:2200px) {
+      :root {
+        --max: 1840px
+      }
+    }
+
+    /* ============================================================
+   2. BASE
+   ============================================================ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-padding-top: calc(var(--header-h) + 1.5rem)
+    }
+
+    html.lenis,
+    html.lenis body {
+      height: auto
+    }
+
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: var(--fs-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+      height: auto
+    }
+
+    a {
+      color: inherit
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+      color: inherit
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    ol,
+    dl,
+    dd,
+    figure {
+      margin: 0
+    }
+
+    ul[role="list"],
+    ol[role="list"] {
+      list-style: none;
+      padding: 0
+    }
+
+    [hidden] {
+      display: none !important
+    }
+
+    ::selection {
+      background: var(--gum);
+      color: var(--white)
+    }
+
+    /* Focus — 2px solid, 3px offset, ≥3:1 vs adjacent (2.4.7, 2.4.13) */
+    :focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px
+    }
+
+    .night :focus-visible {
+      outline-color: var(--night-ink)
+    }
+
+    :focus:not(:focus-visible) {
+      outline: none
+    }
+
+    .sr-only {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0
+    }
+
+    .skip-link {
+      position: absolute;
+      left: var(--gutter);
+      top: var(--s-3);
+      z-index: 300;
+      padding: .8rem 1.1rem;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      font-weight: 500;
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus {
+      transform: none
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--max);
+      margin-inline: auto;
+      padding-inline: var(--gutter)
+    }
+
+    .section {
+      padding-block: var(--section)
+    }
+
+    .flush-top {
+      padding-top: 0
+    }
+
+    /* 12-col editorial grid, mobile = single column */
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      column-gap: var(--gutter);
+      row-gap: var(--s-7)
+    }
+
+    @media (min-width:900px) {
+      .grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr))
+      }
+    }
+
+    /* Type roles */
+    .h2 {
+      font-family: var(--serif);
+      font-weight: 350;
+      font-size: var(--fs-h2);
+      line-height: 1.02;
+      letter-spacing: -.02em;
+      font-variation-settings: "opsz" 72
+    }
+
+    .h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: var(--fs-h3);
+      line-height: 1.15;
+      letter-spacing: -.01em
+    }
+
+    .lede {
+      font-size: var(--fs-lede);
+      line-height: 1.5;
+      color: var(--ink-2);
+      max-width: var(--measure)
+    }
+
+    .meta {
+      font-size: var(--fs-meta);
+      color: var(--ink-3);
+      line-height: 1.55
+    }
+
+    .night .meta {
+      color: var(--night-ink-2)
+    }
+
+    p+p {
+      margin-top: var(--s-4)
+    }
+
+    .prose {
+      max-width: var(--measure);
+      color: var(--ink-2)
+    }
+
+    /* ============================================================
+   3. LINKS & BUTTONS — the only places with motion
+   ============================================================ */
+    .link {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .22em;
+      text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+      transition: text-decoration-thickness var(--t-instant) linear, text-decoration-color var(--t-instant) linear;
+    }
+
+    .link:hover {
+      text-decoration-thickness: 2px;
+      text-decoration-color: currentColor
+    }
+
+    /* Button: label rolls to a duplicate on hover. Duplicate is aria-hidden. */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .9rem;
+      min-height: 52px;
+      padding: 0 1.35rem;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .9375rem;
+      border: 0;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background-color var(--t-quick) var(--ease);
+    }
+
+    .btn:hover {
+      background: var(--gum)
+    }
+
+    .btn:active {
+      background: #1F3644
+    }
+
+    .btn__label {
+      display: grid;
+      overflow: hidden;
+      line-height: 1.3
+    }
+
+    .btn__label>span {
+      grid-area: 1/1;
+      transition: transform var(--t-quick) var(--ease)
+    }
+
+    .btn__label>span[aria-hidden] {
+      transform: translateY(105%)
+    }
+
+    .btn:hover .btn__label>span:first-child,
+    .btn:focus-visible .btn__label>span:first-child {
+      transform: translateY(-105%)
+    }
+
+    .btn:hover .btn__label>span[aria-hidden],
+    .btn:focus-visible .btn__label>span[aria-hidden] {
+      transform: none
+    }
+
+    .btn svg {
+      width: 14px;
+      height: 14px;
+      flex: none;
+      transition: transform var(--t-quick) var(--ease)
+    }
+
+    .btn:hover svg {
+      transform: translateX(3px)
+    }
+
+    .btn--quiet {
+      background: transparent;
+      color: var(--ink);
+      padding-inline: 0;
+      min-height: 44px
+    }
+
+    .btn--quiet:hover {
+      background: transparent;
+      color: var(--gum)
+    }
+
+    .btn--quiet .btn__label {
+      text-decoration: underline;
+      text-underline-offset: .3em;
+      text-decoration-thickness: 1px
+    }
+
+    .night .btn {
+      background: var(--night-ink);
+      color: var(--night)
+    }
+
+    .night .btn:hover {
+      background: var(--night-accent)
+    }
+
+    .btn[aria-busy="true"] {
+      pointer-events: none;
+      background: var(--ink-2)
+    }
+
+    /* ============================================================
+   4. MASTHEAD
+   Solid, no blur. Sticky but short; scroll-padding prevents
+   focused targets being obscured (2.4.11).
+   ============================================================ */
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--paper);
+      height: var(--header-h)
+    }
+
+    .masthead .wrap {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-5)
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      text-decoration: none;
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      letter-spacing: -.01em;
+      font-weight: 400;
+    }
+
+    .brand i {
+      font-style: italic;
+      color: var(--ink-3);
+      margin-left: .15em
+    }
+
+    .nav {
+      display: none
+    }
+
+    .nav ul {
+      display: flex;
+      align-items: center;
+      gap: var(--s-2)
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 .6rem;
+      text-decoration: none;
+      font-size: .9375rem;
+      color: var(--ink-2);
+      text-decoration-line: underline;
+      text-decoration-color: transparent;
+      text-underline-offset: .4em;
+      text-decoration-thickness: 1px;
+      transition: color var(--t-instant) linear, text-decoration-color var(--t-instant) linear;
+    }
+
+    .nav a:hover {
+      color: var(--ink);
+      text-decoration-color: var(--rule)
+    }
+
+    .nav a[aria-current="true"] {
+      color: var(--ink);
+      text-decoration-color: var(--ink)
+    }
+
+    .masthead-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--s-4)
+    }
+
+    .masthead-actions .btn {
+      min-height: 44px;
+      padding: 0 1rem
+    }
+
+    .menu-btn {
+      min-height: 44px;
+      min-width: 44px;
+      padding: 0 .25rem;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      font-size: .9375rem;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: .35em;
+      text-decoration-thickness: 1px;
+    }
+
+    @media (min-width:900px) {
+      .nav {
+        display: block
+      }
+
+      .menu-btn {
+        display: none
+      }
+    }
+
+    @media (max-width:420px) {
+      .masthead-actions .btn {
+        display: none
+      }
+    }
+
+    /* Menu sheet — native <dialog>: focus containment, Esc, inert background */
+    .sheet {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      max-width: none;
+      height: 100dvh;
+      max-height: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: var(--night);
+      color: var(--night-ink);
+    }
+
+    .sheet::backdrop {
+      background: transparent
+    }
+
+    .sheet[open] {
+      animation: sheet-in var(--t-sheet) var(--ease) both
+    }
+
+    @keyframes sheet-in {
+      from {
+        clip-path: inset(0 0 100% 0)
+      }
+
+      to {
+        clip-path: inset(0)
+      }
+    }
+
+    .sheet-inner {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: var(--s-7);
+      padding-bottom: var(--s-6)
+    }
+
+    .sheet-top {
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .sheet-top .brand {
+      color: var(--night-ink)
+    }
+
+    .sheet-top .brand i {
+      color: var(--night-ink-2)
+    }
+
+    .sheet .menu-btn {
+      display: inline-flex;
+      align-items: center;
+      color: var(--night-ink)
+    }
+
+    .sheet-links {
+      display: grid;
+      align-content: start;
+      gap: var(--s-1)
+    }
+
+    .sheet-links a {
+      display: inline-block;
+      padding-block: .1em;
+      text-decoration: none;
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(2.5rem, 1.6rem + 4.5vw, 4.5rem);
+      line-height: 1.08;
+      letter-spacing: -.02em;
+    }
+
+    .sheet-links a:hover {
+      font-style: italic;
+      color: var(--night-accent)
+    }
+
+    .sheet-about {
+      display: grid;
+      gap: var(--s-5);
+      color: var(--night-ink-2);
+      font-size: var(--fs-meta)
+    }
+
+    .sheet-about p {
+      max-width: 46ch
+    }
+
+    .sheet-about dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--s-1) var(--s-5)
+    }
+
+    .sheet-about dt {
+      color: var(--night-ink-2)
+    }
+
+    .sheet-about dd {
+      color: var(--night-ink)
+    }
+
+    /* ============================================================
+   5. HERO — statement-led, no imagery dependency
+   ============================================================ */
+    .hero {
+      padding-top: clamp(3rem, 1rem + 8vw, 9rem);
+      padding-bottom: var(--section)
+    }
+
+    .hero h1 {
+      grid-column: 1/-1;
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: var(--fs-hero);
+      line-height: .94;
+      letter-spacing: -.035em;
+      font-variation-settings: "opsz" 72;
+      max-width: 14ch;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 300
+    }
+
+    .hero h1 sup {
+      font-size: .28em;
+      vertical-align: top;
+      position: relative;
+      top: .35em;
+      margin-left: .06em;
+      font-style: normal;
+      font-family: var(--sans);
+      font-weight: 500
+    }
+
+    .specimen {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--s-2) var(--s-5);
+      align-content: start;
+      font-size: var(--fs-meta)
+    }
+
+    .specimen dt {
+      color: var(--ink-3)
+    }
+
+    .specimen dd {
+      color: var(--ink)
+    }
+
+    .hero-copy {
+      display: grid;
+      gap: var(--s-6);
+      align-content: start
+    }
+
+    .hero-note {
+      font-size: var(--fs-meta);
+      color: var(--ink-3);
+      max-width: 44ch
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--s-4) var(--s-6)
+    }
+
+    @media (min-width:900px) {
+      .hero .grid {
+        row-gap: var(--s-8)
+      }
+
+      .specimen {
+        grid-column: 1/5;
+        grid-row: 2
+      }
+
+      .hero-copy {
+        grid-column: 6/12;
+        grid-row: 2
+      }
+    }
+
+    /* ============================================================
+   6. STATEMENT
+   ============================================================ */
+    .statement {
+      padding-top: 0
+    }
+
+    .statement p.big {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: var(--fs-stmt);
+      line-height: 1.18;
+      letter-spacing: -.015em;
+      color: var(--ink-3);
+    }
+
+    .statement p.big strong {
+      font-weight: 400;
+      color: var(--ink)
+    }
+
+    @media (min-width:900px) {
+      .statement .big {
+        grid-column: 3/12
+      }
+
+      .statement .meta {
+        grid-column: 3/8
+      }
+    }
+
+    /* ============================================================
+   9. FIGURES — typographic, varied scale, no boxes
+   ============================================================ */
+    .figures {
+      padding-top: 0
+    }
+
+    .fig-list {
+      display: grid;
+      gap: var(--s-8)
+    }
+
+    .fig {
+      display: grid;
+      gap: var(--s-3);
+      align-content: start
+    }
+
+    .fig dd {
+      font-family: var(--serif);
+      font-weight: 300;
+      line-height: .86;
+      letter-spacing: -.04em;
+      font-variant-numeric: lining-nums tabular-nums;
+      font-size: var(--fs-fig)
+    }
+
+    .fig dd small {
+      font-size: .32em;
+      letter-spacing: 0;
+      color: var(--night-ink-2);
+      margin-left: .06em
+    }
+
+    .fig dt {
+      font-size: var(--fs-meta);
+      color: var(--night-ink-2);
+      max-width: 30ch
+    }
+
+    .fig--xl dd {
+      font-size: calc(var(--fs-fig) * 1.45)
+    }
+
+    @media (min-width:900px) {
+      .figures .h2 {
+        grid-column: 1/7
+      }
+
+      .figures .meta {
+        grid-column: 9/13;
+        align-self: end
+      }
+
+      .fig-list {
+        grid-column: 1/-1;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        column-gap: var(--gutter);
+        row-gap: var(--s-9)
+      }
+
+      .fig--a {
+        grid-column: 1/8
+      }
+
+      .fig--b {
+        grid-column: 9/13;
+        align-self: end
+      }
+
+      .fig--c {
+        grid-column: 3/7
+      }
+
+      .fig--d {
+        grid-column: 8/13;
+        margin-top: var(--s-8)
+      }
+    }
+
+    /* ============================================================
+   10. THREATS — catalogue index (reference pattern)
+   ============================================================ */
+    .index {
+      margin-top: var(--s-8)
+    }
+
+    .index li+li {
+      margin-top: 2px
+    }
+
+    .index a {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: var(--s-2) var(--s-5);
+      align-items: baseline;
+      padding: var(--s-5) var(--s-4);
+      margin-inline: calc(var(--s-4) * -1);
+      text-decoration: none;
+      transition: background-color var(--t-instant) linear;
+    }
+
+    .index .cat {
+      font-size: var(--fs-meta);
+      color: var(--ink-3);
+      grid-column: 1/-1
+    }
+
+    .index .title {
+      font-family: var(--serif);
+      font-size: var(--fs-h3);
+      line-height: 1.2;
+      letter-spacing: -.01em
+    }
+
+    .index .kind {
+      font-size: var(--fs-meta);
+      color: var(--ink-2);
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      white-space: nowrap
+    }
+
+    .index .kind svg {
+      width: 12px;
+      height: 12px;
+      transition: transform var(--t-quick) var(--ease)
+    }
+
+    .index a:hover {
+      background: var(--tint)
+    }
+
+    .index a:hover .title {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .18em
+    }
+
+    .index a:hover .kind svg {
+      transform: translate(2px, -2px)
+    }
+
+    @media (min-width:900px) {
+      .threats .h2 {
+        grid-column: 1/7
+      }
+
+      .threats .prose {
+        grid-column: 8/12;
+        align-self: end
+      }
+
+      .index {
+        grid-column: 1/-1
+      }
+
+      .index a {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        column-gap: var(--gutter);
+        align-items: baseline
+      }
+
+      .index .cat {
+        grid-column: 1/3
+      }
+
+      .index .title {
+        grid-column: 3/10
+      }
+
+      .index .kind {
+        grid-column: 10/13;
+        justify-self: end
+      }
+    }
+
+    /* ============================================================
+   11. HELP — section-level tint, underline fields
+   ============================================================ */
+    .help {
+      background: var(--tint)
+    }
+
+    .help-intro {
+      display: grid;
+      gap: var(--s-5);
+      align-content: start
+    }
+
+    .form {
+      display: grid;
+      gap: var(--s-6)
+    }
+
+    .form-row {
+      display: grid;
+      gap: var(--s-6)
+    }
+
+    @media (min-width:640px) {
+      .form-row {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .field {
+      display: grid;
+      gap: var(--s-2);
+      align-content: start
+    }
+
+    .field label,
+    .choices legend {
+      font-weight: 500;
+      font-size: .9375rem
+    }
+
+    .opt {
+      font-weight: 400;
+      color: var(--ink-3)
+    }
+
+    .req {
+      color: var(--danger)
+    }
+
+    .hint {
+      font-size: var(--fs-meta);
+      color: var(--ink-3)
+    }
+
+    .input,
+    .select,
+    .textarea {
+      width: 100%;
+      min-height: 52px;
+      padding: .8rem .9rem;
+      background: var(--paper);
+      border: 0;
+      border-bottom: 2px solid var(--rule);
+      border-radius: 0;
+      transition: border-color var(--t-instant) linear, background-color var(--t-instant) linear;
+    }
+
+    .textarea {
+      min-height: 9.5rem;
+      resize: vertical;
+      line-height: 1.55
+    }
+
+    .select {
+      appearance: none;
+      padding-right: 2.6rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23141413' stroke-width='1.5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right .9rem center
+    }
+
+    .input:hover,
+    .select:hover,
+    .textarea:hover {
+      border-bottom-color: var(--ink)
+    }
+
+    .input:focus-visible,
+    .select:focus-visible,
+    .textarea:focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 2px;
+      border-bottom-color: var(--ink);
+      background: var(--white)
+    }
+
+    [aria-invalid="true"] {
+      border-bottom-color: var(--danger) !important;
+      background: var(--danger-tint) !important
+    }
+
+    .error {
+      display: flex;
+      gap: .45rem;
+      align-items: flex-start;
+      font-size: var(--fs-meta);
+      font-weight: 500;
+      color: var(--danger)
+    }
+
+    .error[hidden] {
+      display: none
+    }
+
+    .error svg {
+      flex: none;
+      width: 14px;
+      height: 14px;
+      margin-top: .2rem
+    }
+
+    .choices {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: var(--s-3)
+    }
+
+    .choices legend {
+      padding: 0;
+      margin-bottom: var(--s-3)
+    }
+
+    .chip-set {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-2)
+    }
+
+    .chip {
+      position: relative;
+      display: inline-flex
+    }
+
+    .chip input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer
+    }
+
+    .chip span {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      min-height: 44px;
+      padding: 0 1rem;
+      background: var(--paper);
+      font-size: .9375rem;
+      transition: background-color var(--t-instant) linear, color var(--t-instant) linear;
+    }
+
+    .chip span::before {
+      /* state glyph: not colour alone (1.4.1) */
+      content: "";
+      width: 10px;
+      height: 10px;
+      border: 1.5px solid var(--rule);
+      border-radius: 50%;
+      flex: none;
+    }
+
+    .chip:hover span {
+      background: var(--white)
+    }
+
+    .chip input:checked+span {
+      background: var(--ink);
+      color: var(--paper)
+    }
+
+    .chip input:checked+span::before {
+      border-color: var(--paper);
+      background: var(--paper);
+      box-shadow: inset 0 0 0 2px var(--ink)
+    }
+
+    .chip input:focus-visible+span {
+      outline: 2px solid var(--ink);
+      outline-offset: 3px
+    }
+
+    .choices[aria-invalid="true"] .chip span {
+      background: var(--danger-tint)
+    }
+
+    .check {
+      display: flex;
+      gap: .8rem;
+      align-items: flex-start;
+      font-size: .9375rem;
+      color: var(--ink-2)
+    }
+
+    .check input {
+      flex: none;
+      width: 22px;
+      height: 22px;
+      margin: .15rem 0 0;
+      accent-color: var(--ink)
+    }
+
+    .error-summary {
+      background: var(--danger-tint);
+      padding: var(--s-5);
+      display: grid;
+      gap: var(--s-2)
+    }
+
+    .error-summary h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--danger)
+    }
+
+    .error-summary ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: .9375rem
+    }
+
+    .error-summary a {
+      color: var(--danger)
+    }
+
+    .form-status {
+      background: var(--ok-tint);
+      color: var(--ok-ink);
+      padding: var(--s-5);
+      font-weight: 500
+    }
+
+    .form-foot {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-4)
+    }
+
+    @media (min-width:900px) {
+      .help-intro {
+        grid-column: 1/5;
+        position: sticky;
+        top: calc(var(--header-h) + var(--s-7));
+        align-self: start
+      }
+
+      .form {
+        grid-column: 6/13
+      }
+    }
+
+    /* ============================================================
+   12. FOOTER — closing statement, then colophon
+   ============================================================ */
+    .site-footer {
+      padding-top: var(--section);
+      padding-bottom: var(--s-6)
+    }
+
+    .closing {
+      display: grid;
+      gap: var(--s-6);
+      padding-bottom: var(--s-9)
+    }
+
+    .closing p.big {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: var(--fs-hero);
+      line-height: .95;
+      letter-spacing: -.035em;
+      max-width: 13ch
+    }
+
+    .closing p.big em {
+      font-style: italic
+    }
+
+    .colophon {
+      display: grid;
+      gap: var(--s-7);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding-bottom: var(--s-8)
+    }
+
+    .colophon h2 {
+      font-size: var(--fs-meta);
+      font-weight: 500;
+      color: var(--night-ink-2);
+      margin-bottom: var(--s-3)
+    }
+
+    .colophon a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      text-decoration: none
+    }
+
+    .colophon a:hover {
+      text-decoration: underline;
+      text-underline-offset: .25em;
+      color: var(--night-accent)
+    }
+
+    .about {
+      grid-column: 1/-1;
+      color: var(--night-ink-2);
+      max-width: 44ch
+    }
+
+    .legal {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-4);
+      font-size: var(--fs-meta);
+      color: var(--night-ink-2);
+      padding-top: var(--s-5)
+    }
+
+    .legal ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-1) var(--s-5)
+    }
+
+    .legal a,
+    .legal button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      color: var(--night-ink-2);
+      text-decoration: none;
+      background: none;
+      border: 0;
+      padding: 0;
+      font-size: inherit;
+      cursor: pointer
+    }
+
+    .legal a:hover,
+    .legal button:hover {
+      color: var(--night-ink);
+      text-decoration: underline
+    }
+
+    /* OneTrust injects its own styles onto #ot-sdk-btn; neutralise to match footer */
+    #ot-sdk-btn.ot-sdk-show-settings {
+      all: unset;
+      display: inline-flex !important;
+      align-items: center;
+      min-height: 24px;
+      color: var(--night-ink-2) !important;
+      font: inherit !important;
+      cursor: pointer;
+      border: 0 !important;
+      padding: 0 !important;
+      background: none !important
+    }
+
+    #ot-sdk-btn.ot-sdk-show-settings:hover {
+      color: var(--night-ink) !important;
+      text-decoration: underline !important;
+      background: none !important
+    }
+
+    #ot-sdk-btn.ot-sdk-show-settings:focus-visible {
+      outline: 2px solid var(--night-ink) !important;
+      outline-offset: 3px
+    }
+
+    .to-top {
+      color: var(--night-ink);
+      text-decoration: underline;
+      text-underline-offset: .3em
+    }
+
+    @media (min-width:900px) {
+      .closing {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        column-gap: var(--gutter);
+        align-items: end
+      }
+
+      .closing p.big {
+        grid-column: 1/10
+      }
+
+      .closing .btn {
+        grid-column: 10/13;
+        justify-self: end
+      }
+
+      .colophon {
+        grid-template-columns: 5fr 2fr 2fr 3fr;
+        column-gap: var(--gutter)
+      }
+
+      .about {
+        grid-column: auto
+      }
+    }
+
+    /* ============================================================
+   13. REDUCED MOTION (2.3.3) & FORCED COLOURS
+   ============================================================ */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0s !important;
+        animation: none !important;
+        scroll-behavior: auto !important
+      }
+
+      .btn__label>span[aria-hidden] {
+        display: none
+      }
+
+      .btn:hover .btn__label>span:first-child,
+      .btn:focus-visible .btn__label>span:first-child {
+        transform: none
+      }
+    }
+
+    @media (forced-colors: active) {
+
+      .btn,
+      .chip span,
+      .error-summary,
+      .form-status {
+        border: 1px solid CanvasText
+      }
+
+      .input,
+      .select,
+      .textarea {
+        border: 1px solid CanvasText
+      }
+    }
+
+    @media print {
+
+      .masthead,
+      .sheet,
+      .form,
+      .legal {
+        display: none
+      }
+
+      .night {
+        background: none;
+        color: #000
+      }
+    }
+
+    .night {
+      background: var(--night);
+      color: var(--night-ink)
+    }
+
+    .night .lede,
+    .night .prose {
+      color: var(--night-ink-2)
+    }
+
+    /* ============================================================
+   WHITE TIGER — page-specific components
+   ============================================================ */
+
+    /* Photographs: fixed aspect ratios prevent layout shift (CLS);
+   tint shows while loading or if a remote image is blocked. */
+    .photo {
+      margin: 0;
+      display: grid;
+      gap: var(--s-3)
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: var(--tint)
+    }
+
+    .night .photo img {
+      background: #22282C
+    }
+
+    .photo .frame {
+      overflow: hidden;
+      background: var(--tint)
+    }
+
+    .night .photo .frame {
+      background: #22282C
+    }
+
+    .r-wide {
+      aspect-ratio: 16/9
+    }
+
+    .r-pano {
+      aspect-ratio: 21/9
+    }
+
+    .r-port {
+      aspect-ratio: 4/5
+    }
+
+    .r-tall {
+      aspect-ratio: 3/4
+    }
+
+    .r-sq {
+      aspect-ratio: 1
+    }
+
+    .photo figcaption {
+      font-size: var(--fs-meta);
+      color: var(--ink-3);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: var(--s-2) var(--s-5)
+    }
+
+    .night .photo figcaption {
+      color: var(--night-ink-2)
+    }
+
+    .photo figcaption a {
+      color: inherit
+    }
+
+    @media (max-width:640px) {
+      .r-pano {
+        aspect-ratio: 4/3
+      }
+    }
+
+    /* Hero */
+    .hero h1 {
+      max-width: 11ch
+    }
+
+    .hero-photo {
+      grid-column: 1/-1;
+      margin-top: var(--s-6)
+    }
+
+    @media (min-width:900px) {
+      .specimen {
+        grid-row: 3
+      }
+
+      .hero-copy {
+        grid-row: 3
+      }
+
+      .hero-photo {
+        grid-row: 2;
+        margin-top: 0
+      }
+    }
+
+    /* Knowledge spread: tall photo + facts list */
+    .know-head {
+      display: grid;
+      gap: var(--s-5);
+      align-content: start
+    }
+
+    .traits {
+      display: grid;
+      gap: var(--s-7)
+    }
+
+    .trait {
+      display: grid;
+      gap: var(--s-3)
+    }
+
+    .trait p {
+      color: var(--ink-2);
+      max-width: 48ch
+    }
+
+    .compare {
+      background: var(--tint);
+      padding: clamp(1.25rem, .8rem + 2vw, 2.5rem);
+      display: grid;
+      gap: var(--s-5)
+    }
+
+    .compare table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9375rem
+    }
+
+    .compare caption {
+      text-align: left;
+      font-family: var(--serif);
+      font-size: var(--fs-h3);
+      margin-bottom: var(--s-4)
+    }
+
+    .compare th,
+    .compare td {
+      text-align: left;
+      padding: .75rem .5rem .75rem 0;
+      vertical-align: top
+    }
+
+    .compare thead th {
+      font-weight: 500;
+      color: var(--ink-3);
+      font-size: var(--fs-meta)
+    }
+
+    .compare tbody th {
+      font-weight: 500
+    }
+
+    .compare tbody tr+tr>* {
+      border-top: 1px solid #D9D7CF
+    }
+
+    /* decorative row hint; content does not depend on it */
+    @media (min-width:900px) {
+      .know-head {
+        grid-column: 1/6
+      }
+
+      .know-photo {
+        grid-column: 7/13;
+        grid-row: 1/3
+      }
+
+      .traits {
+        grid-column: 1/6
+      }
+
+      .compare {
+        grid-column: 1/-1;
+        grid-template-columns: 4fr 8fr;
+        column-gap: var(--gutter);
+        align-items: start
+      }
+
+      .compare p {
+        grid-column: 1
+      }
+
+      .compare table {
+        grid-column: 2;
+        grid-row: 1/3
+      }
+    }
+
+    /* Chronology — years are data, not decorative numbering */
+    .chron {
+      display: grid;
+      gap: 0
+    }
+
+    .chron li {
+      display: grid;
+      grid-template-columns: 5.5rem 1fr;
+      gap: var(--s-5);
+      padding-block: var(--s-5)
+    }
+
+    .chron time {
+      font-family: var(--serif);
+      font-size: var(--fs-h3);
+      line-height: 1.1;
+      color: var(--night-accent);
+      font-variant-numeric: lining-nums tabular-nums
+    }
+
+    .chron h3 {
+      font-size: 1.0625rem;
+      font-weight: 500;
+      margin-bottom: var(--s-1)
+    }
+
+    .chron p {
+      color: var(--night-ink-2);
+      max-width: 56ch
+    }
+
+    @media (min-width:900px) {
+      .chron-head {
+        grid-column: 1/5;
+        position: sticky;
+        top: calc(var(--header-h) + var(--s-7));
+        align-self: start
+      }
+
+      .chron {
+        grid-column: 6/13
+      }
+
+      .chron li {
+        grid-template-columns: 8rem 1fr
+      }
+    }
+
+    /* Where: two-column ledger, then range note */
+    .where-col {
+      display: grid;
+      gap: var(--s-5);
+      align-content: start
+    }
+
+    .ledger {
+      display: grid;
+      gap: var(--s-4)
+    }
+
+    .ledger dt {
+      font-family: var(--serif);
+      font-size: var(--fs-h3);
+      line-height: 1.15
+    }
+
+    .ledger dd {
+      color: var(--ink-2);
+      max-width: 46ch
+    }
+
+    .ledger div {
+      display: grid;
+      gap: var(--s-2)
+    }
+
+    .ledger div+div {
+      padding-top: var(--s-4)
+    }
+
+    @media (min-width:900px) {
+      .where .h2 {
+        grid-column: 1/8
+      }
+
+      .where .prose {
+        grid-column: 1/7
+      }
+
+      .where-col--then {
+        grid-column: 1/6
+      }
+
+      .where-col--now {
+        grid-column: 7/13;
+        margin-top: var(--s-9)
+      }
+    }
+
+    /* Gallery — broken grid, mixed ratios */
+    .gallery {
+      display: grid;
+      gap: var(--gutter);
+      grid-template-columns: minmax(0, 1fr)
+    }
+
+    @media (min-width:700px) {
+      .gallery {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        align-items: start
+      }
+
+      .g1 {
+        grid-column: 1/8
+      }
+
+      .g2 {
+        grid-column: 9/13;
+        margin-top: var(--s-9)
+      }
+
+      .g3 {
+        grid-column: 2/6
+      }
+
+      .g4 {
+        grid-column: 7/13;
+        margin-top: var(--s-8)
+      }
+
+      .g5 {
+        grid-column: 1/13
+      }
+    }
+
+    /* Welfare — pull statement + supporting notes */
+    .welfare .big {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: var(--fs-stmt);
+      line-height: 1.18;
+      letter-spacing: -.015em
+    }
+
+    .welfare .notes {
+      display: grid;
+      gap: var(--s-6)
+    }
+
+    .welfare .notes p {
+      color: var(--ink-2);
+      max-width: 44ch
+    }
+
+    .welfare .notes h3 {
+      font-size: 1.0625rem;
+      font-weight: 500;
+      margin-bottom: var(--s-2)
+    }
+
+    @media (min-width:900px) {
+      .welfare .big {
+        grid-column: 1/10
+      }
+
+      .welfare .notes {
+        grid-column: 1/-1;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        column-gap: var(--gutter)
+      }
+
+      .welfare .notes>div:nth-child(1) {
+        grid-column: 1/5
+      }
+
+      .welfare .notes>div:nth-child(2) {
+        grid-column: 6/10;
+        margin-top: var(--s-7)
+      }
+
+      .welfare .notes>div:nth-child(3) {
+        grid-column: 10/13
+      }
+    }
+
+    /* Measures — reuse .index rows */
+    .measures .h2 {
+      grid-column: 1/-1
+    }
+
+    @media (min-width:900px) {
+      .measures .h2 {
+        grid-column: 1/8
+      }
+
+      .measures .prose {
+        grid-column: 8/12;
+        align-self: end
+      }
+    }
+
+    /* Figures on night: three sizes */
+    @media (min-width:900px) {
+      .fig--a {
+        grid-column: 1/7
+      }
+
+      .fig--b {
+        grid-column: 8/13;
+        align-self: end
+      }
+
+      .fig--c {
+        grid-column: 2/6
+      }
+
+      .fig--d {
+        grid-column: 7/12;
+        margin-top: var(--s-8)
+      }
+    }
+
+    /* Opt-out link — matches legal links */
+    .legal .f-optout {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      color: var(--night-ink-2);
+      text-decoration: none
+    }
+
+    .legal .f-optout:hover {
+      color: var(--night-ink);
+      text-decoration: underline
+    }
+
+    /* Image credits list */
+    .credits {
+      font-size: var(--fs-meta);
+      color: var(--night-ink-2);
+      display: grid;
+      gap: var(--s-1);
+      margin-top: var(--s-3)
+    }
+
+    .credits a {
+      min-height: auto !important;
+      display: inline !important;
+      text-decoration: underline !important;
+      text-underline-offset: .2em
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <a class="brand" href="#top" id="brand">White,<i>Tiger</i><span class="sr-only"> home</span></a>
+      <nav class="nav" aria-label="Primary">
+        <ul role="list">
+          <li><a href="#know">Knowledge</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#where">Where</a></li>
+          <li><a href="#measures">Measures</a></li>
+        </ul>
+      </nav>
+      <div class="masthead-actions">
+        <a class="btn" href="#help">
+          <span class="btn__label"><span>Take action</span><span aria-hidden="true">Take action</span></span>
+        </a>
+        <button class="menu-btn" type="button" aria-haspopup="dialog" aria-controls="menu" aria-expanded="false"
+          id="menu-open">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <dialog class="sheet night" id="menu" aria-label="Site menu">
+    <div class="wrap sheet-inner">
+      <div class="sheet-top">
+        <span class="brand" aria-hidden="true">White,<i>Tiger</i></span>
+        <button class="menu-btn" type="button" id="menu-close">Close</button>
+      </div>
+      <nav aria-label="Menu">
+        <ul class="sheet-links" role="list">
+          <li><a href="#know">Knowledge</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#where">Where they live</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#measures">Measures</a></li>
+          <li><a href="#help">How to help</a></li>
+        </ul>
+      </nav>
+      <div class="sheet-about">
+        <p>An editorial guide to the white tiger: what it is, where it came from, and what is being done for tigers
+          today.</p>
+        <dl>
+          <dt>Species</dt>
+          <dd><i>Panthera tigris</i></dd>
+          <dt>Variant</dt>
+          <dd>Leucistic Bengal tiger</dd>
+          <dt>In the wild</dt>
+          <dd>None recorded since 1958</dd>
+        </dl>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="main" tabindex="-1">
+    <span id="top"></span>
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap grid">
+        <h1 id="hero-title">One gene <em>apart</em></h1>
+
+        <figure class="photo hero-photo">
+          <div class="frame r-pano">
+            <img
+              src="https://images.pexels.com/photos/2529296/pexels-photo-2529296.jpeg?auto=compress&cs=tinysrgb&w=2000"
+              srcset="https://images.pexels.com/photos/2529296/pexels-photo-2529296.jpeg?auto=compress&cs=tinysrgb&w=900 900w,
+                       https://images.pexels.com/photos/2529296/pexels-photo-2529296.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w,
+                       https://images.pexels.com/photos/2529296/pexels-photo-2529296.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w"
+              sizes="(min-width:1560px) 1450px, 94vw" width="2000" height="857" fetchpriority="high"
+              alt="A white tiger with dark stripes walking through dense green foliage, mouth slightly open." />
+          </div>
+          <figcaption><span>White Bengal tiger in a forest enclosure.</span><span>Photo: <a
+                href="https://www.pexels.com/photo/photo-of-white-tiger-2529296/" target="_blank"
+                rel="noopener noreferrer">Lucas Pezeta, Pexels<span class="sr-only"> (opens in a new
+                  tab)</span></a></span></figcaption>
+        </figure>
+
+        <dl class="specimen" aria-label="Summary">
+          <dt>Species</dt>
+          <dd><i>Panthera tigris</i></dd>
+          <dt>Variant</dt>
+          <dd>Leucistic Bengal tiger</dd>
+          <dt>Gene</dt>
+          <dd>SLC45A2, recessive</dd>
+          <dt>In the wild</dt>
+          <dd>None recorded since 1958</dd>
+        </dl>
+
+        <div class="hero-copy">
+          <p class="lede">The white tiger is not a species or a subspecies. It is a Bengal tiger that inherited two
+            copies of a rare recessive gene, which removes the orange from its coat and leaves the stripes.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#know">
+              <span class="btn__label"><span>Read the facts</span><span aria-hidden="true">Read the facts</span></span>
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </a>
+            <a class="btn btn--quiet" href="#measures"><span class="btn__label"><span>What is being done</span><span
+                  aria-hidden="true">What is being done</span></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STATEMENT ======================= -->
+    <section class="section statement" aria-labelledby="why-title">
+      <div class="wrap grid">
+        <h2 id="why-title" class="sr-only">Why the white tiger matters</h2>
+        <p class="big">Its white coat is beautiful, but it gives no camouflage in the forest. <strong>Almost every white
+            tiger alive today was bred in captivity, often from close relatives.</strong></p>
+        <p class="meta">Sources: National Geographic; WWF; IFAW.</p>
+      </div>
+    </section>
+
+    <!-- ======================= KNOWLEDGE ======================= -->
+    <section class="section flush-top" id="know" aria-labelledby="know-title">
+      <div class="wrap grid">
+        <div class="know-head">
+          <h2 id="know-title" class="h2">What makes a tiger white</h2>
+          <p class="prose">In 2013, researchers at Peking University traced the white coat to a single change in the
+            gene SLC45A2. It blocks the red and yellow pigment and leaves the black.</p>
+        </div>
+
+        <figure class="photo know-photo">
+          <div class="frame r-port">
+            <img src="https://images.unsplash.com/photo-1603814408869-d961b76a9f9e?auto=format&fit=crop&w=1200&q=70"
+              width="1200" height="1500" loading="lazy" decoding="async"
+              alt="Close-up of a white tiger's face looking straight at the camera, with pale eyes and dark facial stripes." />
+          </div>
+          <figcaption><span>Stripes are in the skin as well as the fur.</span><span>Photo: <a
+                href="https://unsplash.com/photos/white-and-black-tiger-in-close-up-photography-r-Rryh476pI"
+                target="_blank" rel="noopener noreferrer">Unsplash<span class="sr-only"> (opens in a new
+                  tab)</span></a></span></figcaption>
+        </figure>
+
+        <div class="traits">
+          <div class="trait">
+            <h3 class="h3">Two copies, or none</h3>
+            <p>The gene is recessive. A cub is white only if it inherits a copy from each parent. One normal copy makes
+              it orange. In the wild this happens roughly once in 10,000 births.</p>
+          </div>
+          <div class="trait">
+            <h3 class="h3">Blue eyes, pink nose</h3>
+            <p>White tigers usually have blue eyes and a pink nose. Like all tigers, each one has its own stripe
+              pattern, and the stripes show on the skin even if the fur is shaved.</p>
+          </div>
+          <div class="trait">
+            <h3 class="h3">Full-sized Bengal</h3>
+            <p>Males can reach about 260 kg and 3 m in length, and are fully grown at around three years old. Females
+              are smaller, at up to about 170 kg.</p>
+          </div>
+        </div>
+
+        <div class="compare">
+          <p class="prose">White tigers are often called albino. They are not: albinism removes all pigment, while the
+            white tiger still makes black pigment for its stripes and eyes.</p>
+          <table>
+            <caption>Leucism compared with albinism</caption>
+            <thead>
+              <tr>
+                <th scope="col">Trait</th>
+                <th scope="col">White tiger (leucism)</th>
+                <th scope="col">Albinism</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Stripes</th>
+                <td>Dark, clearly visible</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th scope="row">Eyes</th>
+                <td>Usually blue</td>
+                <td>Pink or red</td>
+              </tr>
+              <tr>
+                <th scope="row">Pigment lost</th>
+                <td>Red and yellow only</td>
+                <td>All melanin</td>
+              </tr>
+              <tr>
+                <th scope="row">Recorded in tigers</th>
+                <td>Yes</td>
+                <td>No confirmed record</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= HISTORY ======================= -->
+    <section class="section night" id="history" aria-labelledby="history-title">
+      <div class="wrap grid">
+        <div class="chron-head">
+          <h2 id="history-title" class="h2">From Rewa to the world’s zoos</h2>
+          <p class="lede" style="margin-top:var(--s-5)">How one cub became the ancestor of most captive white tigers.
+          </p>
+        </div>
+        <ol class="chron" role="list">
+          <li><time datetime="1500">1500s</time>
+            <div>
+              <h3>First records</h3>
+              <p>White tigers are recorded in India.</p>
+            </div>
+          </li>
+          <li><time datetime="1951-05-27">1951</time>
+            <div>
+              <h3>Mohan is captured</h3>
+              <p>Maharaja Martand Singh of Rewa takes a white male cub from the forests of present-day Madhya Pradesh.
+                He names him Mohan and keeps him at Govindgarh Palace.</p>
+            </div>
+          </li>
+          <li><time datetime="1958">1958</time>
+            <div>
+              <h3>A first litter, and a last sighting</h3>
+              <p>Mohan is bred with his daughter Radha, and four white cubs are born in October. The same year, the last
+                white tiger known in the wild is shot.</p>
+            </div>
+          </li>
+          <li><time datetime="1969-12">1969</time>
+            <div>
+              <h3>Mohan dies</h3>
+              <p>He dies aged about 19. His descendants have been sent to zoos in India and abroad.</p>
+            </div>
+          </li>
+          <li><time datetime="2011-06">2011</time>
+            <div>
+              <h3>Accredited zoos stop breeding</h3>
+              <p>The Association of Zoos and Aquariums bars its members from breeding for the white coat.</p>
+            </div>
+          </li>
+          <li><time datetime="2013-05">2013</time>
+            <div>
+              <h3>The gene is found</h3>
+              <p>Researchers identify SLC45A2 as the cause of the white coat.</p>
+            </div>
+          </li>
+          <li><time datetime="2016-04-03">2016</time>
+            <div>
+              <h3>A safari in Mukundpur</h3>
+              <p>The Maharaja Martand Singh Judeo White Tiger Safari opens near Rewa, where Mohan’s story began.</p>
+            </div>
+          </li>
+          <li><time datetime="2022-12-20">2022</time>
+            <div>
+              <h3>US law on big cats</h3>
+              <p>The Big Cat Public Safety Act ends private ownership of big cats as pets and bans public contact with
+                cubs.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= FIGURES ======================= -->
+    <section class="section night figures" aria-labelledby="figures-title">
+      <div class="wrap grid">
+        <h2 id="figures-title" class="h2">The numbers behind the coat</h2>
+        <p class="meta">Sources: Discovery UK, IFAW, Government of India (2022 tiger estimate).</p>
+        <dl class="fig-list">
+          <div class="fig fig--a fig--xl">
+            <dt>Wild tiger births per white cub, roughly</dt>
+            <dd>10,000</dd>
+          </div>
+          <div class="fig fig--b">
+            <dt>Year the last known wild white tiger was killed</dt>
+            <dd>1958</dd>
+          </div>
+          <div class="fig fig--c">
+            <dt>White tigers in captivity worldwide, about half of them in India</dt>
+            <dd>~200</dd>
+          </div>
+          <div class="fig fig--d">
+            <dt>Average estimate of wild tigers in India, 2022</dt>
+            <dd>3,682</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ======================= WHERE ======================= -->
+    <section class="section where" id="where" aria-labelledby="where-title">
+      <div class="wrap grid">
+        <h2 id="where-title" class="h2">Where they were found, and where they are now</h2>
+        <p class="prose">There are no white tigers known in the wild today. Every one you can see lives in a zoo, safari
+          park or sanctuary.</p>
+
+        <div class="where-col where-col--then">
+          <h3 class="h3">Then: the wild</h3>
+          <dl class="ledger">
+            <div>
+              <dt>Rewa, Madhya Pradesh</dt>
+              <dd>The historic centre of white tiger records, and the forests where Mohan was found. The area is now
+                part of the Sanjay-Dubri and Bandhavgarh landscape.</dd>
+            </div>
+            <div>
+              <dt>Elsewhere in India</dt>
+              <dd>Occasional reports from Assam, West Bengal, Bihar, Odisha and the Sundarbans.</dd>
+            </div>
+            <div>
+              <dt>Bengal tiger range</dt>
+              <dd>Had they survived, white tigers would share the Bengal tiger’s forests and wetlands in India,
+                Bangladesh, Bhutan and Nepal.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="where-col where-col--now">
+          <figure class="photo">
+            <div class="frame r-wide">
+              <img src="https://images.unsplash.com/photo-1763893710896-512509bffbf0?auto=format&fit=crop&w=1400&q=70"
+                width="1400" height="788" loading="lazy" decoding="async"
+                alt="A white tiger with wet, matted fur in front of green foliage, eyes half closed." />
+            </div>
+            <figcaption><span>Captive white tiger.</span><span>Photo: <a
+                  href="https://unsplash.com/photos/a-wet-white-tiger-with-green-foliage-background-md6YcTj_1wo"
+                  target="_blank" rel="noopener noreferrer">Unsplash<span class="sr-only"> (opens in a new
+                    tab)</span></a></span></figcaption>
+          </figure>
+          <h3 class="h3">Now: captivity</h3>
+          <dl class="ledger">
+            <div>
+              <dt>Zoos and sanctuaries</dt>
+              <dd>About 200 worldwide, roughly half of them in India.</dd>
+            </div>
+            <div>
+              <dt>Mukundpur, Madhya Pradesh</dt>
+              <dd>Home to the world’s first white tiger safari, opened in 2016 near Rewa.</dd>
+            </div>
+            <div>
+              <dt>United States</dt>
+              <dd>Many captive lines were crossed with Amur tigers in the 1970s, so most are not pure Bengal.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= GALLERY ======================= -->
+    <section class="section flush-top" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <h2 id="gallery-title" class="h2" style="margin-bottom:var(--s-8)">Gallery</h2>
+        <div class="gallery">
+          <figure class="photo g1">
+            <div class="frame r-wide"><img
+                src="https://images.unsplash.com/photo-1763893799251-c0256d38ac1e?auto=format&fit=crop&w=1400&q=70"
+                width="1400" height="788" loading="lazy" decoding="async"
+                alt="A white tiger against grey rocks, head turned to one side." /></div>
+            <figcaption><span>Photo: <a
+                  href="https://unsplash.com/photos/a-white-tiger-with-a-rocky-background-xPqlxftDks8" target="_blank"
+                  rel="noopener noreferrer">Unsplash<span class="sr-only"> (opens in a new tab)</span></a></span>
+            </figcaption>
+          </figure>
+          <figure class="photo g2">
+            <div class="frame r-tall"><img
+                src="https://images.unsplash.com/photo-1632804702086-024033ada25b?auto=format&fit=crop&w=900&q=70"
+                width="900" height="1200" loading="lazy" decoding="async"
+                alt="A white tiger standing on a path beside a grassy field." /></div>
+            <figcaption><span>Photo: <a
+                  href="https://unsplash.com/photos/a-white-tiger-standing-on-top-of-a-lush-green-field-RdXYhja8-tU"
+                  target="_blank" rel="noopener noreferrer">Unsplash<span class="sr-only"> (opens in a new
+                    tab)</span></a></span></figcaption>
+          </figure>
+          <figure class="photo g3">
+            <div class="frame r-sq"><img
+                src="https://images.pexels.com/photos/3866355/pexels-photo-3866355.jpeg?auto=compress&cs=tinysrgb&w=900"
+                width="900" height="900" loading="lazy" decoding="async"
+                alt="Close-up of a white tiger's face framed by green leaves." /></div>
+            <figcaption><span>Photo: <a href="https://www.pexels.com/photo/white-tiger-3866355/" target="_blank"
+                  rel="noopener noreferrer">Md Sabbir Khan, Pexels<span class="sr-only"> (opens in a new
+                    tab)</span></a></span></figcaption>
+          </figure>
+          <figure class="photo g4">
+            <div class="frame r-wide"><img
+                src="https://images.pexels.com/photos/133408/pexels-photo-133408.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                width="1400" height="788" loading="lazy" decoding="async"
+                alt="A white tiger lying calmly on green grass." /></div>
+            <figcaption><span>Photo: <a href="https://www.pexels.com/photo/white-tiger-133408/" target="_blank"
+                  rel="noopener noreferrer">Pexels<span class="sr-only"> (opens in a new tab)</span></a></span>
+            </figcaption>
+          </figure>
+          <figure class="photo g5">
+            <div class="frame r-pano"><img
+                src="https://images.pexels.com/photos/2575689/pexels-photo-2575689.jpeg?auto=compress&cs=tinysrgb&w=2000"
+                width="2000" height="857" loading="lazy" decoding="async"
+                alt="A white tiger among green plants and rocks, looking to the left." /></div>
+            <figcaption><span>Photo: <a href="https://www.pexels.com/photo/white-tiger-2575689/" target="_blank"
+                  rel="noopener noreferrer">Lucas Pezeta, Pexels<span class="sr-only"> (opens in a new
+                    tab)</span></a></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= WELFARE ======================= -->
+    <section class="section welfare" aria-labelledby="welfare-title">
+      <div class="wrap grid">
+        <h2 id="welfare-title" class="sr-only">The cost of breeding for colour</h2>
+        <p class="big">Breeding for white means breeding relatives. Conservation groups say it does nothing for tigers
+          in the wild.</p>
+        <div class="notes">
+          <div>
+            <h3>Health</h3>
+            <p>Inbred tigers can suffer spinal deformities, organ defects, immune problems and crossed eyes.</p>
+          </div>
+          <div>
+            <h3>Survival</h3>
+            <p>IFAW reports a study in which 80% of inbred cubs died shortly after birth.</p>
+          </div>
+          <div>
+            <h3>Profit</h3>
+            <p>Cubs draw paying visitors for photos and handling, which is the main reason many are bred.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= MEASURES ======================= -->
+    <section class="section flush-top measures" id="measures" aria-labelledby="measures-title">
+      <div class="wrap grid">
+        <h2 id="measures-title" class="h2">Measures being taken</h2>
+        <p class="prose">Protecting the white tiger means protecting wild Bengal tigers and their forests, and ending
+          profit-driven breeding.</p>
+        <ul class="index" role="list">
+          <li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1943922" target="_blank"
+              rel="noopener noreferrer">
+              <span class="cat">India</span>
+              <span class="title">Project Tiger now covers 53 reserves, and India holds about 75% of the world’s wild
+                tigers</span>
+              <span class="kind">Since 1973 <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+                  <path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.3" />
+                </svg></span>
+              <span class="sr-only">(Government of India press release, opens in a new tab)</span></a></li>
+          <li><a href="https://www.fws.gov/what-you-need-know-about-big-cat-public-safety-act" target="_blank"
+              rel="noopener noreferrer">
+              <span class="cat">United States</span>
+              <span class="title">The Big Cat Public Safety Act restricts breeding, private ownership and cub
+                handling</span>
+              <span class="kind">Law, 2022 <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+                  <path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.3" />
+                </svg></span>
+              <span class="sr-only">(U.S. Fish and Wildlife Service, opens in a new tab)</span></a></li>
+          <li><a href="https://tigers.panda.org/news_and_stories/stories/truth_about_white_tigers/" target="_blank"
+              rel="noopener noreferrer">
+              <span class="cat">Zoos</span>
+              <span class="title">Accredited zoos no longer breed for the white coat</span>
+              <span class="kind">Policy, 2011 <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+                  <path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.3" />
+                </svg></span>
+              <span class="sr-only">(WWF, opens in a new tab)</span></a></li>
+          <li><a href="https://www.discovery.com/nature/the-year-of-the-tiger-pictures" target="_blank"
+              rel="noopener noreferrer">
+              <span class="cat">Field work</span>
+              <span class="title">Discovery and WWF funded anti-poaching, monitoring and habitat protection through
+                Project C.A.T.</span>
+              <span class="kind">Partnership <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+                  <path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.3" />
+                </svg></span>
+              <span class="sr-only">(Discovery, opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= HELP ======================= -->
+    <section class="section help" id="help" aria-labelledby="help-title">
+      <div class="wrap grid">
+        <div class="help-intro">
+          <h2 id="help-title" class="h2">Stand with wild tigers</h2>
+          <p class="lede">Tell us how you’d like to help, and we’ll send practical ways to support wild tiger
+            conservation.</p>
+          <p class="hint">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr-only">with an
+              asterisk</span> are required.</p>
+        </div>
+
+        <form class="form" id="help-form" novalidate>
+          <div class="error-summary" id="error-summary" tabindex="-1" hidden>
+            <h3 id="error-summary-title">There is a problem</h3>
+            <ul aria-labelledby="error-summary-title"></ul>
+          </div>
+          <div class="form-status" id="form-status" tabindex="-1" role="status" hidden></div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="f-name" name="name" type="text" autocomplete="name" required
+                aria-describedby="f-name-err" />
+              <p class="error" id="f-name-err" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="f-email" name="email" type="email" autocomplete="email" spellcheck="false"
+                required aria-describedby="f-email-hint f-email-err" />
+              <p class="hint" id="f-email-hint">For example, name@example.com</p>
+              <p class="error" id="f-email-err" hidden></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-region">Where are you based? <span class="opt">(optional)</span></label>
+            <select class="select" id="f-region" name="region" autocomplete="country-name">
+              <option value="">Prefer not to say</option>
+              <option>India</option>
+              <option>Bangladesh</option>
+              <option>Nepal</option>
+              <option>Bhutan</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Elsewhere</option>
+            </select>
+          </div>
+
+          <fieldset class="choices" id="f-topic" aria-describedby="f-topic-hint f-topic-err">
+            <legend>I’d like to <span class="req" aria-hidden="true">*</span></legend>
+            <p class="hint" id="f-topic-hint">Choose one or more.</p>
+            <div class="chip-set">
+              <label class="chip"><input type="checkbox" name="topic" value="donate" id="f-topic-first" /><span>Support
+                  field conservation</span></label>
+              <label class="chip"><input type="checkbox" name="topic" value="pledge" /><span>Pledge to avoid cub
+                  petting</span></label>
+              <label class="chip"><input type="checkbox" name="topic" value="travel" /><span>Find responsible
+                  safaris</span></label>
+              <label class="chip"><input type="checkbox" name="topic" value="learn" /><span>Get research
+                  updates</span></label>
+            </div>
+            <p class="error" id="f-topic-err" hidden></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-msg">Why do tigers matter to you? <span class="req" aria-hidden="true">*</span></label>
+            <textarea class="textarea" id="f-msg" name="message" required minlength="20" maxlength="1000"
+              aria-describedby="f-msg-hint f-msg-err"></textarea>
+            <p class="hint" id="f-msg-hint"><span id="f-msg-count">0</span> of 1,000 characters, minimum 20.</p>
+            <p class="sr-only" id="f-msg-live" aria-live="polite"></p>
+            <p class="error" id="f-msg-err" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="check"><input type="checkbox" id="f-consent" name="consent" required
+                aria-describedby="f-consent-err" />
+              <span>I agree to receive updates about tiger conservation. <span class="req"
+                  aria-hidden="true">*</span></span></label>
+            <p class="hint" style="padding-left:calc(22px + .8rem)">Read our <a class="link" href="/privacy">Privacy
+                Policy</a>. We never share your details.</p>
+            <p class="error" id="f-consent-err" hidden></p>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn" type="submit">
+              <span class="btn__label"><span class="btn-text">Count me in</span><span aria-hidden="true">Count me
+                  in</span></span>
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer night">
+    <div class="wrap">
+      <div class="closing">
+        <p class="big">Save the forest. <em>Save the tiger.</em></p>
+        <a class="btn" href="#help">
+          <span class="btn__label"><span>Take action</span><span aria-hidden="true">Take action</span></span>
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="colophon">
+        <div class="about">
+          <p>An editorial guide to the white tiger. Educational content, not affiliated with the sources or
+            photographers listed.</p>
+          <p class="credits">Images: <span><a href="https://unsplash.com/s/photos/white-tiger" target="_blank"
+                rel="noopener noreferrer">Unsplash</a> and <a href="https://www.pexels.com/search/white%20tiger/"
+                target="_blank" rel="noopener noreferrer">Pexels</a>, credited under each photo.</span></p>
+        </div>
+        <nav aria-labelledby="ft-pages">
+          <h2 id="ft-pages">Pages</h2>
+          <ul role="list">
+            <li><a href="#know">Knowledge</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#where">Where</a></li>
+            <li><a href="#measures">Measures</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="ft-sources">
+          <h2 id="ft-sources">Sources</h2>
+          <ul role="list">
+            <li><a
+                href="https://www.nationalgeographic.com/science/article/tiger-tiger-burning-bright-just-one-gene-to-make-it-white"
+                target="_blank" rel="noopener noreferrer">National Geographic<span class="sr-only"> (opens in a new
+                  tab)</span></a></li>
+            <li><a href="https://www.discoveryuk.com/big-cats/white-tiger-facts-habitat-and-diet/" target="_blank"
+                rel="noopener noreferrer">Discovery<span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><a href="https://tigers.panda.org/news_and_stories/stories/truth_about_white_tigers/" target="_blank"
+                rel="noopener noreferrer">WWF<span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.ifaw.org/animals/white-tigers" target="_blank" rel="noopener noreferrer">IFAW<span
+                  class="sr-only"> (opens in a new tab)</span></a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Species</h2>
+          <p class="meta"><i>Panthera tigris</i><br>Leucistic Bengal tiger<br>Native range: Indian subcontinent</p>
+        </div>
+      </div>
+
+      <div class="legal">
+        <p>© <span id="year">2026</span> White, Tiger. Facts from National Geographic, Discovery, WWF and IFAW.</p>
+        <ul role="list">
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="/cookies">Cookie Policy</a></li>
+          <li>
+            <!-- OneTrust cookies settings button start -->
+            <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie settings</button>
+            <!-- OneTrust cookies settings button end -->
+          </li>
+          <li>
+            <!-- Opt-out webform link start: replace href with your webform URL -->
+            <a class="f-optout" href="https://YOUR-WEBFORM-URL-HERE" target="_blank" rel="noopener noreferrer">
+              Do Not Sell or Share My Personal Information<span class="sr-only"> (opens in a new
+                tab)</span>
+            </a>
+            <!-- Opt-out webform link end -->
+          </li>
+          <li><a href="/accessibility">Accessibility statement</a></li>
+        </ul>
+        <a class="to-top" href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script defer>
+    window.addEventListener('DOMContentLoaded', () => {
+      const root = document.documentElement;
+      const mqReduce = matchMedia('(prefers-reduced-motion: reduce)');
+      const reduce = () => mqReduce.matches;
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      /* ---------- Lenis: smooth wheel only; off for reduced motion; touch stays native ---------- */
+      let lenis = null;
+      const startLenis = () => {
+        if (lenis || reduce() || !window.Lenis) return;
+        lenis = new Lenis({ duration: 0.9, smoothWheel: true });
+        const raf = t => { if (!lenis) return; lenis.raf(t); requestAnimationFrame(raf); };
+        requestAnimationFrame(raf);
+      };
+      const stopLenis = () => { if (lenis) { lenis.destroy(); lenis = null; } };
+      startLenis();
+      mqReduce.addEventListener('change', () => reduce() ? stopLenis() : startLenis());
+
+      const headerH = () => document.querySelector('.masthead').offsetHeight;
+      const goTo = (target) => {
+        if (lenis) lenis.scrollTo(target, { offset: -headerH() - 16 });
+        else target.scrollIntoView({ behavior: reduce() ? 'auto' : 'smooth', block: 'start' });
+        if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });   /* focus follows navigation (2.4.3) */
+      };
+
+      /* ---------- Menu: native modal dialog ---------- */
+      const menu = document.getElementById('menu');
+      const openBtn = document.getElementById('menu-open');
+      const closeBtn = document.getElementById('menu-close');
+      openBtn.addEventListener('click', () => {
+        menu.showModal(); openBtn.setAttribute('aria-expanded', 'true');
+        lenis && lenis.stop(); closeBtn.focus();
+      });
+      const closeMenu = () => menu.open && menu.close();
+      closeBtn.addEventListener('click', closeMenu);
+      menu.addEventListener('close', () => { openBtn.setAttribute('aria-expanded', 'false'); lenis && lenis.start(); });
+      menu.addEventListener('cancel', () => requestAnimationFrame(() => openBtn.focus())); /* Esc */
+      matchMedia('(min-width: 900px)').addEventListener('change', e => e.matches && closeMenu());
+
+      /* ---------- In-page anchors ---------- */
+      document.addEventListener('click', e => {
+        const a = e.target.closest('a[href^="#"]');
+        if (!a) return;
+        const id = a.getAttribute('href');
+        const target = id === '#top' ? document.getElementById('main') : document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        closeMenu();
+        goTo(target);
+        history.pushState(null, '', id);
+      });
+
+      /* ---------- Active section (aria-current) ---------- */
+      const navLinks = [...document.querySelectorAll('.nav a')];
+      const sections = navLinks.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(en => {
+          if (!en.isIntersecting) return;
+          navLinks.forEach(l => l.getAttribute('href') === '#' + en.target.id
+            ? l.setAttribute('aria-current', 'true') : l.removeAttribute('aria-current'));
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(s => io.observe(s));
+
+      /* ---------- Form ---------- */
+      const form = document.getElementById('help-form');
+      const summary = document.getElementById('error-summary');
+      const status = document.getElementById('form-status');
+      const msg = document.getElementById('f-msg');
+      const countEl = document.getElementById('f-msg-count');
+      const live = document.getElementById('f-msg-live');
+      const topicSet = document.getElementById('f-topic');
+      const icon = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 4.5v4.5M8 11v.6" stroke="currentColor" stroke-width="1.5"/></svg>';
+
+      /* Announce only at meaningful thresholds, not every keystroke */
+      let lastBand = '';
+      msg.addEventListener('input', () => {
+        const n = msg.value.length; countEl.textContent = n.toLocaleString('en-AU');
+        const band = n < 20 ? 'short' : n > 950 ? 'near' : 'ok';
+        if (band !== lastBand) {
+          live.textContent = band === 'ok' && lastBand === 'short' ? 'Minimum length reached.' : band === 'near' ? `${1000 - n} characters left.` : '';
+          lastBand = band;
+        }
+      });
+
+      const rules = {
+        'f-name': el => el.value.trim() ? '' : 'Enter your full name',
+        'f-email': el => !el.value.trim() ? 'Enter your email address'
+          : /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value.trim()) ? '' : 'Enter an email address in the format name@example.com',
+        'f-topic': () => form.querySelector('input[name="topic"]:checked') ? '' : 'Choose at least one way to help',
+        'f-msg': el => { const n = el.value.trim().length; return n >= 20 ? '' : `Write at least 20 characters (you have ${n})`; },
+        'f-consent': el => el.checked ? '' : 'Tick the box to agree to receive updates'
+      };
+      const setError = (id, text) => {
+        const el = document.getElementById(id), err = document.getElementById(id + '-err');
+        el.setAttribute('aria-invalid', text ? 'true' : 'false');
+        err.hidden = !text; err.innerHTML = text ? `${icon}<span>${text}</span>` : '';
+        return text;
+      };
+      /* Validate after first blur; re-validate live only once a field is in error */
+      Object.keys(rules).forEach(id => {
+        const el = document.getElementById(id);
+        el.addEventListener('focusout', e => {
+          if (id === 'f-topic' && el.contains(e.relatedTarget)) return;
+          if (el.dataset.touched) setError(id, rules[id](el));
+        });
+        el.addEventListener('input', () => { el.dataset.touched = '1'; if (el.getAttribute('aria-invalid') === 'true') setError(id, rules[id](el)); });
+        el.addEventListener('change', () => { el.dataset.touched = '1'; if (el.getAttribute('aria-invalid') === 'true') setError(id, rules[id](el)); });
+      });
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        status.hidden = true;
+        const errors = Object.keys(rules).map(id => [id, setError(id, rules[id](document.getElementById(id)))]).filter(([, t]) => t);
+        const list = summary.querySelector('ul');
+        if (errors.length) {
+          list.innerHTML = errors.map(([id, t]) => `<li><a href="#${id === 'f-topic' ? 'f-topic-first' : id}" data-field>${t}</a></li>`).join('');
+          summary.hidden = false; summary.focus();
+          return;
+        }
+        summary.hidden = true;
+        const btn = form.querySelector('button[type="submit"]');
+        btn.setAttribute('aria-busy', 'true'); btn.disabled = true;
+        try {
+          await new Promise(r => setTimeout(r, 900)); /* replace with fetch('/api/signup', { method:'POST', body:new FormData(form) }) */
+          form.reset(); countEl.textContent = '0'; lastBand = '';
+          Object.keys(rules).forEach(id => { const el = document.getElementById(id); el.removeAttribute('aria-invalid'); delete el.dataset.touched; });
+          status.textContent = 'Thank you. Your first tiger action guide is on its way to your inbox.';
+          status.hidden = false; status.focus();
+        } finally { btn.removeAttribute('aria-busy'); btn.disabled = false; }
+      });
+      /* Error-summary links move focus to the field, not just scroll */
+      summary.addEventListener('click', e => {
+        const a = e.target.closest('a[data-field]'); if (!a) return;
+        e.preventDefault(); e.stopPropagation();
+        document.querySelector(a.getAttribute('href')).focus();
+      }, true);
+    });
+  </script>
+</body>
+
+</html>
